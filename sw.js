@@ -1,4 +1,4 @@
-const CACHE_NAME = 'chedule-cache-v2'; // Still increment this!
+const CACHE_NAME = 'chedule-cache-v3'; // Still increment this!
 const urlsToCache = [
   '/',
   'index.html',
