@@ -1,6 +1,6 @@
 {
-  "name": "College Schedule",
-  "short_name": "Schedule",
+  "name": "UMak Mobile Schedule",
+  "short_name": "UMak Schedule",
   "start_url": "index.html",
   "display": "standalone",
   "background_color": "#ffffff",
