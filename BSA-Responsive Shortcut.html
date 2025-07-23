@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- This is the fix -->
+  <title>IOA BSA Schedule</title>
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#4a90e2">
+  <link rel="icon" type="image/png" href="icon.png">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #fdfdfd;
+      margin: 0;
+      padding: 20px;
+      color: #333;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #444;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    .day {
+      background: #fff;
+      border-radius: 12px;
+      padding: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .day h2 {
+      font-size: 1.2rem;
+      border-left: 5px solid #007ACC;
+      padding-left: 10px;
+      color: #007ACC;
+      margin-bottom: 10px;
+    }
+
+    .class {
+      margin: 10px 0;
+      padding: 10px 15px;
+      border-radius: 8px;
+      background-color: #f0f8ff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .class span {
+      display: block;
+    }
+
+    .subject {
+      font-weight: 600;
+      color: #004477;
+    }
+
+    .time, .room {
+      font-size: 0.9em;
+      color: #666;
+    }
+
+    .tag {
+      padding: 3px 8px;
+      font-size: 0.75em;
+      border-radius: 4px;
+      background: #d9f2e6;
+      color: #2e8b57;
+      margin-top: 5px;
+    }
+
+    /* ---------- Mobile View Adjustment ---------- */
+    @media (max-width: 600px) {
+      .container {
+        grid-template-columns: 1fr;
+        gap: 15px;
+      }
+
+      .class {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+      }
+
+      .tag {
+        align-self: flex-end;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>College Schedule – 1st Semester A.Y. 2025–2026</h1>
+  <div class="container">
+
+    <!-- Monday -->
+    <div class="day">
+      <h2>Monday</h2>
+      <div class="class">
+        <div>
+          <span class="subject">Art Appreciation</span>
+          <span class="time">09:00 AM – 10:30 AM</span>
+          <span class="room">HPSB 1013</span>
+        </div>
+        <span class="tag">GEAA</span>
+      </div>
+      <div class="class">
+        <div>
+          <span class="subject">Purposive Communication</span>
+          <span class="time">10:30 AM – 12:00 PM</span>
+          <span class="room">HPSB 1014</span>
+        </div>
+        <span class="tag">GEPC</span>
+      </div>
+      <div class="class">
+        <div>
+          <span class="subject">Science, Tech & Society</span>
+          <span class="time">01:30 PM – 03:00 PM</span>
+          <span class="room">HPSB</span>
+        </div>
+        <span class="tag">GESTS</span>
+      </div>
+    </div>
+
+    <!-- Tuesday -->
+    <div class="day">
+      <h2>Tuesday</h2>
+      <div class="class">
+        <div>
+          <span class="subject">Financial Accounting 1</span>
+          <span class="time">09:00 AM – 12:00 PM</span>
+          <span class="room">HPSB 1011</span>
+        </div>
+        <span class="tag">ACCTG 1</span>
+      </div>
+      <div class="class">
+        <div>
+          <span class="subject">Operation Mgt & TQM</span>
+          <span class="time">03:00 PM – 04:30 PM</span>
+          <span class="room">HPSB 1014</span>
+        </div>
+        <span class="tag">TQM</span>
+      </div>
+    </div>
+
+    <!-- Thursday -->
+    <div class="day">
+      <h2>Thursday</h2>
+      <div class="class">
+        <div>
+          <span class="subject">Art Appreciation</span>
+          <span class="time">09:00 AM – 10:30 AM</span>
+          <span class="room">HPSB 1013</span>
+        </div>
+        <span class="tag">GEAA</span>
+      </div>
+      <div class="class">
+        <div>
+          <span class="subject">Purposive Communication</span>
+          <span class="time">10:30 AM – 12:00 PM</span>
+          <span class="room">HPSB 1014</span>
+        </div>
+        <span class="tag">GEPC</span>
+      </div>
+      <div class="class">
+        <div>
+          <span class="subject">Science, Tech & Society</span>
+          <span class="time">01:30 PM – 03:00 PM</span>
+          <span class="room">HPSB</span>
+        </div>
+        <span class="tag">GESTS</span>
+      </div>
+      <div class="class">
+        <div>
+          <span class="subject">PE 1 – PATHFIT</span>
+          <span class="time">03:00 PM – 05:00 PM</span>
+          <span class="room">Oval Track B</span>
+        </div>
+        <span class="tag">PE 1</span>
+      </div>
+      <div class="class">
+        <div>
+          <span class="subject">Professional Elective 1</span>
+          <span class="time">06:00 PM – 09:00 PM</span>
+          <span class="room">HPSB</span>
+        </div>
+        <span class="tag">PROF ELE</span>
+      </div>
+    </div>
+
+    <!-- Friday -->
+    <div class="day">
+      <h2>Friday</h2>
+      <div class="class">
+        <div>
+          <span class="subject">ECO 2 – Economic Dev</span>
+          <span class="time">01:30 PM – 03:00 PM</span>
+          <span class="room">HPSB 1014</span>
+        </div>
+        <span class="tag">ECO 2</span>
+      </div>
+      <div class="class">
+        <div>
+          <span class="subject">Operation Mgt & TQM</span>
+          <span class="time">03:00 PM – 04:30 PM</span>
+          <span class="room">HPSB 1014</span>
+        </div>
+        <span class="tag">TQM</span>
+      </div>
+      <div class="class">
+        <div>
+          <span class="subject">Heritage Studies 1</span>
+          <span class="time">10:30 AM – 12:00 PM</span>
+          <span class="room">HPSB</span>
+        </div>
+        <span class="tag">HERONS</span>
+      </div>
+      <div class="class">
+        <div>
+          <span class="subject">PE 1 – PATHFIT</span>
+          <span class="time">03:00 PM – 05:00 PM</span>
+          <span class="room">Oval Track B</span>
+        </div>
+        <span class="tag">PE 1</span>
+      </div>
+    </div>
+
+    <!-- Saturday -->
+    <div class="day">
+      <h2>Saturday</h2>
+      <div class="class">
+        <div>
+          <span class="subject">CWTS 1</span>
+          <span class="time">01:30 PM – 04:30 PM</span>
+          <span class="room">B3 304</span>
+        </div>
+        <span class="tag">NSTP</span>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
